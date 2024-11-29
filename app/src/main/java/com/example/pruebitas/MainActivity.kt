@@ -1,6 +1,8 @@
 package com.example.pruebitas
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        var usuarioInput : EditText = findViewById(R.id.usuario)
+        var contrasenaInput : EditText = findViewById(R.id.contraseña)
+        var loginBoton : Button = findViewById(R.id.login)
     }
 }
